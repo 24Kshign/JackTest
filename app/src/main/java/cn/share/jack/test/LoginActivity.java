@@ -5,7 +5,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import cn.share.jack.test.base.BaseActivity;
-import cn.share.jack.test.recyclerview.RecyclerViewActivity;
 
 /**
  * Created by jack on 2018/1/12
@@ -20,7 +19,7 @@ public class LoginActivity extends BaseActivity {
         findViewById(R.id.al_btn_to_main).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(LoginActivity.this, RecyclerViewActivity.class));
+                startActivity(new Intent(LoginActivity.this, NumberViewActivity.class));
             }
         });
 

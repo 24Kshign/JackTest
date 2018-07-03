@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import cn.share.jack.module2.ioc.OnClick;
 import cn.share.jack.module2.ioc.ViewById;
 import cn.share.jack.module2.ioc.ViewUtils;
 
@@ -17,7 +18,7 @@ import cn.share.jack.module2.ioc.ViewUtils;
 
 public class NumberViewActivity extends Activity {
 
-    private static final String TAG = "tvText";
+    private static final String TAG = "NumberViewActivity";
 
     @ViewById(R.id.anv_tv_text)
     TextView tvText;
@@ -37,17 +38,22 @@ public class NumberViewActivity extends Activity {
             }
         });
 
-        btnClick.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(android.view.View v) {
-                tvText.setText("你好啊");
-                tvText.post(new Runnable() {
-                    @Override
-                    public void run() {
-                        Log.e(TAG, "width2-->" + tvText.getWidth() + "\nheight2-->" + tvText.getHeight());
-                    }
-                });
-            }
-        });
+//        btnClick.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(android.view.View v) {
+//                tvText.setText("你好啊");
+//                tvText.post(new Runnable() {
+//                    @Override
+//                    public void run() {
+//                        Log.e(TAG, "width2-->" + tvText.getWidth() + "\nheight2-->" + tvText.getHeight());
+//                    }
+//                });
+//            }
+//        });
+    }
+
+    @OnClick(R.id.anv_btn_click)
+    public void onClick(View view) {
+        Log.e(TAG, "onClick: ------------->");
     }
 }

@@ -16,7 +16,6 @@ import cn.share.jack.module2.NetWorkUtil;
 
 public class ViewUtils {
 
-
     public static void inject(Activity activity) {
         inject(new ViewFinder(activity), activity);
     }
@@ -87,6 +86,9 @@ public class ViewUtils {
         private Object mObject;
         private boolean mIsCheckNet;
 
+        private long mLastClickTime = 0;
+        private static final int TIME_INTERVAL = 500;
+
         public DeclaredOnClickListener(Method method, Object object, boolean isCheckNet) {
             mMethod = method;
             mObject = object;
@@ -95,20 +97,23 @@ public class ViewUtils {
 
         @Override
         public void onClick(View v) {
-            //是否需要检测网络
-            if (mIsCheckNet) {
-                if (!NetWorkUtil.isNetWorkAvailable(v.getContext())) {
-                    Toast.makeText(v.getContext(), "亲，您的网络不太给力~", Toast.LENGTH_SHORT).show();
+            if (System.currentTimeMillis() - mLastClickTime >= TIME_INTERVAL) {
+                mLastClickTime = System.currentTimeMillis();
+                //是否需要检测网络
+                if (mIsCheckNet) {
+                    if (!NetWorkUtil.isNetWorkAvailable(v.getContext())) {
+                        Toast.makeText(v.getContext(), "亲，您的网络不太给力~", Toast.LENGTH_SHORT).show();
+                    }
                 }
-            }
-            //点击会调用这个方法，利用反射执行方法
-            try {
-                mMethod.setAccessible(true);  //所有方法都可以注入
-                mMethod.invoke(mObject, v);
-            } catch (IllegalAccessException e) {
-                e.printStackTrace();
-            } catch (InvocationTargetException e) {
-                e.printStackTrace();
+                //点击会调用这个方法，利用反射执行方法
+                try {
+                    mMethod.setAccessible(true);  //所有方法都可以注入
+                    mMethod.invoke(mObject, v);
+                } catch (IllegalAccessException e) {
+                    e.printStackTrace();
+                } catch (InvocationTargetException e) {
+                    e.printStackTrace();
+                }
             }
         }
     }
