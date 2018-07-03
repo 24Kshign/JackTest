@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.share.jack.test.indicator.uicomponent.TabUIComponent xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="50dp">
+
+    <ImageView
+        android:id="@+id/lt_iv_imageView"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        tools:src="@mipmap/ic_launcher_round"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/lt_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lt_iv_imageView"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/main_tab_color_selector"
+        android:layout_marginTop="3dp"
+        tools:text="我的"
+        android:textSize="10dp" />
+
+</cn.share.jack.test.indicator.uicomponent.TabUIComponent>

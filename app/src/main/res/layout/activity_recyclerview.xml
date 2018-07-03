@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ar_ll_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/ar_tv_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary" />
+
+    <!--<include-->
+    <!--android:id="@+id/ar_recyclerview"-->
+    <!--layout="@layout/layout_wrap_recyclerview" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/ar_tv_title"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:background="@color/colorPrimary" />-->
+
+    <cn.share.jack.module2.refreshload.load.PullUpLoadingRecyclerView
+        android:id="@+id/ar_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ar_tv_titlebar" />
+
+</RelativeLayout>

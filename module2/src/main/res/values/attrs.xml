@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TrackIndicatorView">
+
+        <attr name="tabVisibleNum" format="integer" />
+
+    </declare-styleable>
+
+
+    <declare-styleable name="BannerView">
+
+        <!--点的类型（是否显示点，后期会改）-->
+        <attr name="indicatorType" format="enum">
+            <enum name="none" value="0" />
+            <enum name="dot" value="1" />
+        </attr>
+
+        <!--点的位置-->
+        <attr name="indicatorGravity" format="enum">
+            <enum name="left" value="0" />
+            <enum name="center" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+
+        <!--点选中的颜色-->
+        <attr name="indicatorFocus" format="color|reference" />
+        <!--点默认的颜色-->
+        <attr name="indicatorNormal" format="color|reference" />
+        <!--点的大小-->
+        <attr name="dotSize" format="dimension" />
+        <attr name="indicatorDistance" format="dimension" />
+
+    </declare-styleable>
+</resources>

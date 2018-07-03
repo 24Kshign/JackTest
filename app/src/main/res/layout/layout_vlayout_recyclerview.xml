@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.share.jack.test.widget.VLayoutRecyclerViewUIComponent xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lvr_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</cn.share.jack.test.widget.VLayoutRecyclerViewUIComponent>

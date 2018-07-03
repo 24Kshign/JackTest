@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/al_ll_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="登录"
+        android:textColor="@android:color/white"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:text="我是主工程loginactivity" />
+
+    <Button
+        android:id="@+id/al_btn_to_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GO RECYCLERVIEWACTIVITY" />
+
+    <Button
+        android:id="@+id/al_btn_to_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GO INDICATORACTIVITY" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GO MODULE1MAINACTIVITY" />
+
+</LinearLayout>

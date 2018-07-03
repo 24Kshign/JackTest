@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="c999999">#999999</color>
+    <color name="c979797">#979797</color>
+    <color name="c777777">#777777</color>
+    <color name="c666666">#666666</color>
+    <color name="c333333">#333333</color>
+    <color name="cff5808">#ff5808</color>
+    <color name="c77ba15">#77ba15</color>
+    <color name="cb0b0b0">#b0b0b0</color>
+    <color name="cf2f2f2">#f2f2f2</color>
+    <color name="cf4f6f9">#F4F6F9</color>
+    <color name="c34373f">#34373F</color>
+    <color name="caeb4c2">#AEB4C2</color>
+    <color name="c15a2e5">#15a2e5</color>
+    <color name="cff712d">#ff712d</color>
+    <color name="cbababa">#bababa</color>
+    <color name="c595959">#595959</color>
+    <color name="cf19600">#f19600</color>
+    <color name="ccccccc">#cccccc</color>
+    <color name="cf7f7f7">#f7f7f7</color>
+    <color name="cf9f9f9">#f9f9f9</color>
+    <color name="cff0808">#ff0808</color>
+    <color name="caaaaaa">#aaaaaa</color>
+    <color name="cff5a6f">#ff5a6f</color>
+    <color name="cf5f5f5">#F5F5F5</color>
+    <color name="c1786fa">#1786fa</color>
+    <color name="cffe586">#ffe586</color>
+    <color name="cbfbfbf">#bfbfbf</color>
+    <color name="cfc494a">#fc494a</color>
+    <color name="cff7048">#ff7048</color>
+    <color name="cc7414c">#c7414c</color>
+    <color name="c4164c7">#4164c7</color>
+    <color name="cbfbfc7">#bfbfc7</color>
+
+    <color name="line_color_bg">#e1e1e1</color>
+    <color name="layout_bg">@color/cf2f2f2</color>
+    <color name="white">#ffffff</color>
+
+</resources>

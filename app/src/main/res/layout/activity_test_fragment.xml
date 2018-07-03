@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/atf_fl_contailer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/white" />
+
+    <RadioGroup
+        android:id="@+id/atf_rg_parent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#c8f8f8f8"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/atf_rb_one"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="FragmentOne"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/atf_rb_two"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="FragmentTwo"
+            android:textSize="16dp" />
+
+    </RadioGroup>
+
+</LinearLayout>
